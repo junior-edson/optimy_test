@@ -14,6 +14,9 @@ class NewsManager
         $this->db = DB::getInstance();
     }
 
+    /**
+     * @return self
+     */
     public static function getInstance(): self
     {
         if (null === self::$instance) {
